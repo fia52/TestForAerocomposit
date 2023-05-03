@@ -72,24 +72,10 @@ def count_islands(grid: list[list]) -> int:
     return counter
 
 
-print(
-    count_islands(
-        [
-            ["1", "1", "1", "1", "0"],
-            ["1", "1", "0", "1", "0"],
-            ["1", "1", "0", "0", "0"],
-            ["0", "0", "0", "0", "0"],
-        ]
-    )
-)
+size = int(input("Введите количество строк сетки: "))
+grid = []
+for i in range(size):
+    row = list(input().strip())
+    grid.append(row)
 
-print(
-    count_islands(
-        [
-            ["1", "1", "0", "0", "0"],
-            ["1", "1", "0", "0", "0"],
-            ["0", "0", "1", "0", "0"],
-            ["0", "0", "0", "1", "1"],
-        ]
-    )
-)
+print(count_islands(grid))
