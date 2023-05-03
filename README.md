@@ -1,4 +1,4 @@
-## TestForAerocomposite
+## TestForAerocomposit
 
 
 * problem_1.py - решение задания 1
